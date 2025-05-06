@@ -171,11 +171,11 @@ class InvoiceController extends Controller
         } elseif ($angka < 100) {
             $hasil = $this->terbilang($angka / 10) . " puluh " . $this->terbilang($angka % 10);
         } elseif ($angka < 200) {
-            $hasil = " seratus" . $this->terbilang($angka - 100);
+            $hasil = " seratus " . $this->terbilang($angka - 100);
         } elseif ($angka < 1000) {
             $hasil = $this->terbilang($angka / 100) . " ratus " . $this->terbilang($angka % 100);
         } elseif ($angka < 2000) {
-            $hasil = " seribu" . $this->terbilang($angka - 1000);
+            $hasil = " seribu " . $this->terbilang($angka - 1000);
         } elseif ($angka < 1000000) {
             $hasil = $this->terbilang($angka / 1000) . " ribu " . $this->terbilang($angka % 1000);
         } elseif ($angka < 1000000000) {
